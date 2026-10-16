@@ -163,5 +163,19 @@
     <button type="reset">Restablecer button</button>
     <button type="button">Botón button</button>
     </form>
+    <!-- Formulario de búsqueda de Wikipedia -->
+    <form action="https://es.wikipedia.org/w/index.php" method="get">
+    <!-- search: tipo de input optimizado para campos de búsqueda -->
+    <!-- list: asocia el input con un elemento datalist mediante su id -->
+    <!-- datalist: proporciona una lista de opciones predefinidas para sugerir en un input -->
+    <label for="busqueda-wiki">Buscar en Wikipedia:</label>
+    <input type="search" id="busqueda-wiki" name="search" list="sugerencias-wiki">
+    <datalist id="sugerencias-wiki">
+    <option value="Formulario web">
+    <option value="HTML">
+    <option value="Protocolo de transferencia de hipertexto">
+    </datalist>
+    <button type="submit">Buscar</button>
+    </form>
 </body>
 </html>
