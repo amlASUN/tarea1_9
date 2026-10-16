@@ -120,6 +120,31 @@
     <label for="mes">Mes:</label>
     <input type="month" id="mes" name="mes">
     <br><br>
+    <!-- select: crea una lista desplegable de opciones -->
+    <!-- multiple: permite al usuario seleccionar varias opciones de la lista a la vez -->
+    <!-- optgroup: agrupa opciones relacionadas dentro de un elemento select -->
+    <!-- option: define una opción seleccionable dentro de un select o datalist -->
+    <!-- selected: marca una opción para que aparezca seleccionada por defecto al cargar la página -->
+    <label for="modulos">Módulos:</label>
+    <select id="modulos" name="modulos" multiple>
+      <optgroup label="Primero">
+        <option value="lm" selected>Lenguaje de Marcas</option>
+        <option value="fol">FOL</option>
+      </optgroup>
+      <optgroup label="Segundo">
+        <option value="diw">Diseño Web</option>
+        <option value="daw">Despliegue</option>
+      </optgroup>
+    </select>
+    <br><br>
+
+    <!-- textarea: crea un área de texto multilínea para comentarios o mensajes largos -->
+    <!-- rows: define el número visible de líneas de altura del textarea -->
+    <!-- cols: define el ancho visible en columnas (caracteres) del textarea -->
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
+    </fieldset>
+
     </form>
 </body>
 </html>
