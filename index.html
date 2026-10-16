@@ -10,6 +10,41 @@
     <!-- action: indica la URL o archivo al que se enviarán los datos del formulario -->
     <!-- method: especifica el método HTTP para enviar los datos, como get o post -->
     <form action="index.html" method="get">
+          <!-- fieldset: agrupa elementos relacionados dentro de un formulario, creando un recuadro -->
+    <legend>Datos personales by Aitor</legend>
+
+    <!-- label: etiqueta descriptiva asociada a un control de formulario -->
+    <!-- for: vincula el label con un elemento mediante su id para mejorar la accesibilidad -->
+    <!-- id: identificador único para un elemento HTML -->
+    <!-- name: nombre del campo que se enviará al servidor con los datos introducidos -->
+    <!-- input: elemento interactivo para que el usuario introduzca datos -->
+    <!-- type: define el comportamiento y la apariencia del input -->
+    <!-- text: tipo de input para texto plano de una sola línea -->
+    <!-- placeholder: texto de ayuda o ejemplo que se muestra dentro del campo antes de escribir -->
+    <!-- required: indica que rellenar este campo es obligatorio para enviar el formulario -->
+    <!-- autofocus: hace que el campo gane el foco de forma automática al cargar la página -->
+    <!-- size: define el ancho visible del campo de texto en caracteres -->
+    <!-- maxlength: establece el número máximo de caracteres permitidos -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required autofocus size="30" maxlength="40">
+    <br><br>
+
+    <!-- password: tipo de input que oculta los caracteres introducidos con puntos o asteriscos para mayor seguridad -->
+    <!-- minlength: establece el número mínimo de caracteres requeridos para que el campo sea válido -->
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" minlength="8">
+    <br><br>
+
+    <!-- email: tipo de input optimizado para correos electrónicos que incluye validación automática de formato -->
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required>
+    <br><br>
+
+    <!-- tel: tipo de input diseñado para introducir números de teléfono -->
+    <!-- pattern: define una expresión regular que el valor del campo debe cumplir para considerarse válido -->
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+    <br><br>
     </form>
 </body>
 </html>
