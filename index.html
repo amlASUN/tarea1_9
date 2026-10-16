@@ -10,7 +10,7 @@
     <!-- action: indica la URL o archivo al que se enviarán los datos del formulario -->
     <!-- method: especifica el método HTTP para enviar los datos, como get o post -->
     <form action="index.html" method="get">
-          <!-- fieldset: agrupa elementos relacionados dentro de un formulario, creando un recuadro -->
+    <!-- fieldset: agrupa elementos relacionados dentro de un formulario, creando un recuadro -->
     <legend>Datos personales by Aitor</legend>
 
     <!-- label: etiqueta descriptiva asociada a un control de formulario -->
@@ -45,7 +45,7 @@
     <label for="telefono">Teléfono:</label>
     <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
     <br><br>
-        <!-- date: tipo de input que muestra un selector de fecha adaptado al calendario -->
+    <!-- date: tipo de input que muestra un selector de fecha adaptado al calendario -->
     <label for="fecha-nacimiento">Fecha de nacimiento:</label>
     <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
     <br><br>
@@ -65,7 +65,7 @@
     <label for="centro">Centro:</label>
     <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
     </fieldset>
-      <!-- fieldset: segunda sección para agrupar las preferencias del usuario -->
+    <!-- fieldset: segunda sección para agrupar las preferencias del usuario -->
     <fieldset>
     <!-- legend: título descriptivo para este segundo grupo de campos -->
     <legend>Preferencias</legend>
@@ -86,6 +86,39 @@
     <label for="interes-musica">Música</label>
     <input type="checkbox" id="interes-lectura" name="intereses" value="lectura">
     <label for="interes-lectura">Lectura</label>
+    <br><br>
+
+    <!-- number: tipo de input optimizado para introducir valores numéricos -->
+    <!-- min: establece el valor numérico mínimo permitido -->
+    <!-- max: establece el valor numérico máximo permitido -->
+    <!-- step: define el incremento o intervalo válido entre los números -->
+    <label for="horas">Horas de estudio:</label>
+    <input type="number" id="horas" name="horas" min="0" max="10" step="2">
+    <br><br>
+
+    <!-- range: tipo de input que muestra un control deslizante (slider) para seleccionar un valor numérico en un rango -->
+    <label for="nivel">Nivel:</label>
+    <input type="range" id="nivel" name="nivel" min="1" max="10">
+    <br><br>
+
+    <!-- color: tipo de input que abre un selector gráfico de colores en formato hexadecimal -->
+    <label for="color">Color favorito:</label>
+    <input type="color" id="color" name="color">
+    <br><br>
+
+    <!-- time: tipo de input para introducir o seleccionar horas, minutos y segundos -->
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora">
+    <br><br>
+
+    <!-- week: tipo de input para seleccionar una semana específica del año -->
+    <label for="semana">Semana:</label>
+    <input type="week" id="semana" name="semana">
+    <br><br>
+
+    <!-- month: tipo de input para seleccionar un mes y año específicos -->
+    <label for="mes">Mes:</label>
+    <input type="month" id="mes" name="mes">
     <br><br>
     </form>
 </body>
