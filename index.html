@@ -45,6 +45,26 @@
     <label for="telefono">Teléfono:</label>
     <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
     <br><br>
+        <!-- date: tipo de input que muestra un selector de fecha adaptado al calendario -->
+    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+    <br><br>
+
+    <!-- file: tipo de input que permite al usuario seleccionar uno o varios archivos desde su dispositivo -->
+    <label for="foto">Foto:</label>
+    <input type="file" id="foto" name="foto">
+    <br><br>
+
+    <!-- value: define el valor predeterminado que tendrá el elemento de formulario -->
+    <!-- readonly: hace que el campo sea de solo lectura; el usuario puede verlo y seleccionarlo, pero no modificarlo -->
+    <label for="curso">Curso:</label>
+    <input type="text" id="curso" name="curso" value="2026-27" readonly>
+    <br><br>
+
+    <!-- disabled: deshabilita el elemento por completo; no se puede interactuar con él ni se envía su valor en el formulario -->
+    <label for="centro">Centro:</label>
+    <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
+    </fieldset>
     </form>
 </body>
 </html>
