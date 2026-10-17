@@ -177,5 +177,22 @@
     </datalist>
     <button type="submit">Buscar</button>
     </form>
+
+    <!-- Formulario de OpenStreetMap -->
+  <form action="https://www.openstreetmap.org/search" method="get">
+    <label for="mapa-ciudad">Ciudad:</label>
+    <select id="mapa-ciudad" name="query">
+    <optgroup label="Alicante">
+    <option value="Alicante">Alicante</option>
+    <option value="Elche">Elche</option>
+    </optgroup>
+    <optgroup label="Valencia">
+    <option value="Valencia">Valencia</option>
+    <option value="Gandia">Gandia</option>
+    </optgroup>
+    </select>
+    <button type="submit">Buscar en mapa</button>
+  </form>
+
 </body>
 </html>
