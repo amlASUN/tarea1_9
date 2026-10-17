@@ -194,7 +194,7 @@
     <button type="submit">Buscar en mapa</button>
     </form>
     <!-- Formulario del Validador W3C -->
-    <form action="https://validator.w3.org/nu/" method="get">
+    <form action="https://validator.w3.org/nu/" method="post">
     <!-- url: tipo de input diseñado para introducir direcciones web válidas -->
     <label for="validador-url">URL de la web:</label>
     <input type="url" id="validador-url" name="doc" value="https://amlasun.github.io/tarea1_9/">
@@ -206,5 +206,7 @@
     <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método recomienda el artículo para un formulario como este y por qué?</h2>
     <!-- p: define un párrafo de texto -->
     <p>Al enviar los datos mediante el método GET, toda la información confidencial introducida en el formulario (como contraseñas, correos y datos personales) queda expuesta y visible directamente en la URL almacenada en el historial del navegador, facilitando que cualquier persona con acceso al equipo pueda verla. El artículo recomienda utilizar el método POST para este tipo de formularios, ya que envía los datos de forma oculta en el cuerpo de la petición HTTP y no en la barra de direcciones.</p>
+    <h2>¿Qué ocurre al enviar la inscripción con POST? Según el artículo, ¿qué tendría que haber en el servidor para procesar esos datos?</h2>
+    <p>Al enviar la inscripción utilizando el método POST, los datos no se muestran en la barra de direcciones de la URL, pero si el servidor no está preparado, la página web suele devolver un error (como un error 405 Method Not Allowed). Según el artículo, para procesar dichos datos en el servidor se necesita un programa o script backend (como PHP, Node.js o Python) capaz de recibir, interpretar y gestionar la información enviada en el cuerpo de la solicitud.</p>
 </body>
 </html>
