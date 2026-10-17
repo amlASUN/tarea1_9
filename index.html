@@ -179,7 +179,7 @@
     </form>
 
     <!-- Formulario de OpenStreetMap -->
-  <form action="https://www.openstreetmap.org/search" method="get">
+    <form action="https://www.openstreetmap.org/search" method="get">
     <label for="mapa-ciudad">Ciudad:</label>
     <select id="mapa-ciudad" name="query">
     <optgroup label="Alicante">
@@ -192,7 +192,15 @@
     </optgroup>
     </select>
     <button type="submit">Buscar en mapa</button>
-  </form>
-
+    </form>
+    <!-- Formulario del Validador W3C -->
+    <form action="https://validator.w3.org/nu/" method="get">
+    <!-- url: tipo de input diseñado para introducir direcciones web válidas -->
+    <label for="validador-url">URL de la web:</label>
+    <input type="url" id="validador-url" name="doc" value="https://tu-usuario.github.io/tu-repositorio/">
+    <input type="checkbox" id="show-source" name="showsource" value="yes">
+    <label for="show-source">Ver el código</label> 
+    <button type="submit">Validar</button>
+    </form>
 </body>
 </html>
